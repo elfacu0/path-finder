@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="p5.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <meta charset="utf-8" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+            integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="pure-menu custom-restricted-width">
+                <span class="pure-menu-heading">Filling</span>
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item">
+                        <a
+                            href="#"
+                            class="pure-menu-link"
+                            onclick="recursiveFloodFill()"
+                            >Recursive
+                        </a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link" onclick="floodFill()"
+                            >QueueLinear
+                        </a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a
+                            href="#"
+                            class="pure-menu-link"
+                            onclick="floodFill4()"
+                            >Flood fill 4
+                        </a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a
+                            href="#"
+                            class="pure-menu-link"
+                            onclick="improvedFloodFill()"
+                            >Flood fill 8
+                        </a>
+                    </li>
+                    <li class="pure-menu-heading">Pathfinding</li>
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link" onclick="dijkstra()"
+                            >Dijkstra</a
+                        >
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link" onclick="a_star()"
+                            >A*</a
+                        >
+                    </li>
+                </ul>
+                <span class="pure-menu-heading">Clear</span>
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link" onclick="clearPath()"
+                            >Clear Path
+                        </a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link" onclick="clearAll()"
+                            >Clear All
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="sketch-holder"></div>
+        </div>
+        <script src="square.js"></script>
+        <script src="circle.js"></script>
+        <script src="mazeGenerator.js"></script>
+        <script src="sketch.js"></script>
+    </body>
+</html>

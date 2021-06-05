@@ -1,0 +1,42 @@
+html,
+body {
+    background: #0b1340;
+    margin: 0;
+    padding: 0;
+}
+.navbar-nav,
+li {
+    flex: 1;
+    margin: auto !important;
+    display: flex;
+    justify-content: space-around;
+}
+
+.custom-restricted-width {
+    /* To limit the menu width to the content of the menu: */
+    display: inline-block;
+    /* Or set the width explicitly: */
+    /* width: 10em; */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sketch-holder {
+    width: 100%;
+    background: #0b1340;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sketch-holder canvas {
+    display: block;
+}
+
+a {
+    cursor: pointer;
+}
